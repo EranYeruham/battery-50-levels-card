@@ -175,7 +175,7 @@ window.customCards.push({
   name: 'Battery 50 Levels Card',
   description: 'A battery card with 50 discrete levels',
   preview: true,
-  documentationURL: 'https://github.com/YOUR_USERNAME/battery-50-levels-card'
+  documentationURL: 'https://github.com/EranYeruham/battery-50-levels-card'
 });
 
 console.info(
