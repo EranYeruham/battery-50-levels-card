@@ -7,6 +7,8 @@ class Battery50LevelsCard extends HTMLElement {
   }
 
   set hass(hass) {
+    this._hass = hass;
+    
     const entityId = this.config.entity;
     const stateObj = hass.states[entityId];
     
@@ -25,6 +27,8 @@ class Battery50LevelsCard extends HTMLElement {
     
     if (!this.content) {
       const card = document.createElement('ha-card');
+      card.style.cursor = 'pointer';
+      
       card.innerHTML = `
         <div class="card-content">
           <div class="battery-container">
@@ -110,6 +114,13 @@ class Battery50LevelsCard extends HTMLElement {
       
       this.appendChild(card);
       this.content = card;
+      
+      // DEBUG: Test click detection
+      card.addEventListener('click', (e) => {
+        console.log('CLICK DETECTED!');
+        console.log('Entity:', this.config.entity);
+        alert('Card clicked! Entity: ' + this.config.entity);
+      });
     }
 
     // Update levels
@@ -179,7 +190,7 @@ window.customCards.push({
 });
 
 console.info(
-  `%c BATTERY-50-LEVELS-CARD %c v1.0.0 `,
+  `%c BATTERY-50-LEVELS-CARD %c v1.0.4-debug `,
   'color: white; background: green; font-weight: 700;',
   'color: green; background: white; font-weight: 700;'
 );
