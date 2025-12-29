@@ -115,11 +115,15 @@ class Battery50LevelsCard extends HTMLElement {
       this.appendChild(card);
       this.content = card;
       
-      // DEBUG: Test click detection
+      // Add click handler to show entity history
       card.addEventListener('click', (e) => {
-        console.log('CLICK DETECTED!');
-        console.log('Entity:', this.config.entity);
-        alert('Card clicked! Entity: ' + this.config.entity);
+        e.stopPropagation();
+        const event = new CustomEvent('hass-more-info', {
+          bubbles: true,
+          composed: true,
+          detail: { entityId: this.config.entity }
+        });
+        this.dispatchEvent(event);
       });
     }
 
@@ -190,7 +194,7 @@ window.customCards.push({
 });
 
 console.info(
-  `%c BATTERY-50-LEVELS-CARD %c v1.0.4-debug `,
+  `%c BATTERY-50-LEVELS-CARD %c v1.0.5 `,
   'color: white; background: green; font-weight: 700;',
   'color: green; background: white; font-weight: 700;'
 );
