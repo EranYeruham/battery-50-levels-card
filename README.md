@@ -34,7 +34,7 @@ type: module
 
 ### Manual Installation
 
-1. Download `battery-50-levels-card.js` from the [latest release](https://github.com/YOUR_USERNAME/battery-50-levels-card/releases)
+1. Download `battery-50-levels-card.js` from the [latest release](https://github.com/EranYeruham/battery-50-levels-card/releases)
 2. Copy it to `<config>/www/battery-50-levels-card/battery-50-levels-card.js`
 3. Add the following to your Lovelace resources:
 ```yaml
