@@ -35,10 +35,10 @@ type: module
 ### Manual Installation
 
 1. Download `battery-50-levels-card.js` from the [latest release](https://github.com/EranYeruham/battery-50-levels-card/releases)
-2. Copy it to `<config>/www/battery-50-levels-card/battery-50-levels-card.js`
+2. Copy it to `<config>/www/community/battery-50-levels-card/battery-50-levels-card.js`
 3. Add the following to your Lovelace resources:
 ```yaml
-url: /local/battery-50-levels-card/battery-50-levels-card.js
+url: /hacsfiles/battery-50-levels-card/battery-50-levels-card.js
 type: module
 ```
 
@@ -172,8 +172,8 @@ MIT License - See [LICENSE](LICENSE)
 
 If you find this card useful, please ⭐ star the repository!
 
-For issues and feature requests: [GitHub Issues](https://github.com/YOUR_USERNAME/battery-50-levels-card/issues)
+For issues and feature requests: [GitHub Issues](https://github.com/EranYeruham/battery-50-levels-card/issues)
 
-[releases-shield]: https://img.shields.io/github/release/YOUR_USERNAME/battery-50-levels-card.svg
-[releases]: https://github.com/YOUR_USERNAME/battery-50-levels-card/releases
-[license-shield]: https://img.shields.io/github/license/YOUR_USERNAME/battery-50-levels-card.svg
+[releases-shield]: https://img.shields.io/github/release/EranYeruham/battery-50-levels-card.svg
+[releases]: https://github.com/EranYeruham/battery-50-levels-card/releases
+[license-shield]: https://img.shields.io/github/license/EranYeruham/battery-50-levels-card.svg
