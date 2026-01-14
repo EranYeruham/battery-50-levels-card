@@ -2,7 +2,7 @@
 
 Visualize battery percentage with 50 discrete levels for precise monitoring.
 
-![Battery Card](https://raw.githubusercontent.com/eranyeruham/battery-50-levels-card/main/screenshot.png)
+![Battery Card](https://raw.githubusercontent.com/eranyeruham/battery-50-levels-card/screenshot.png)
 
 Perfect for:
 - Solar battery systems
