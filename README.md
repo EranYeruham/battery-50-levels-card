@@ -6,7 +6,7 @@
 
 A custom Home Assistant Lovelace card that displays battery percentage with 50 discrete levels for precise visualization.
 
-![Battery Card Example](screenshot.png)
+https://github.com/EranYeruham/battery-50-levels-card/blob/main/screenshot.jpg
 
 ## Features
 
